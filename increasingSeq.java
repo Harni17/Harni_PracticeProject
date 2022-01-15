@@ -3,7 +3,6 @@ package com.HarniK.Practice_Project;
 public class increasingSeq {
 	static int max_ref; 
 	static int _lis(int arr[], int n){
-
 		if (n == 1)
 			return 1;
 
@@ -15,22 +14,18 @@ public class increasingSeq {
 				max_end= result + 1;
 		}
 
-		if (max_ref < max_end)
+		if (max_ref < max_end) 
 			max_ref = max_end;
 		return max_end;
 	}
-
-	
-	static int lis(int arr[], int n)
-	{
+		
+	static int lis(int arr[], int n){
 		max_ref = 1;
 		_lis(arr, n);
 		return max_ref;
 	}
 	
-	
-	public static void main(String args[])
-	{
+	public static void main(String args[]){
 		int arr[] = { 2, 33, 5, 8, 3, 21, 54, 48, 70, 80 };
 		int n = arr.length;
 		System.out.println("Elements of given array: ");
