@@ -14,18 +14,18 @@ public class appBugFix {
 
     }
     private static void optionsSelection() {
-        String[] arr = {"1.Review the expenditure",
-                "2. Add the expenditure",
-                "3. Delete the expenditure",
-                "4. Sort the expenditures",
-                "5. Search the expenditure",
+        String[] arr = {"1.Review the expense",
+                "2. Add the expense",
+                "3. Delete the expense",
+                "4. Sort the expense",
+                "5. Search the expense",
                 "6. Close the application"
         };
         int[] arr1 = {1,2,3,4,5,6};
-        int  slen = arr1.length;
-        for(int i=0; i<slen;i++){
+        int  strlen = arr1.length;
+        for(int i=0; i<strlen;i++){
             System.out.println(arr[i]);
-            // display the all the Strings mentioned in the String array
+            // to display the all the array String
         }
         ArrayList<Integer> arrlist = new ArrayList<Integer>();
         ArrayList<Integer> expenses = new ArrayList<Integer>();
@@ -37,7 +37,7 @@ public class appBugFix {
         System.out.println("\nEnter your choice:\t");
         Scanner sc = new Scanner(System.in);
         int  choice =  sc.nextInt();
-        for(int j=1;j<=slen;j++){
+        for(int j=1;j<=strlen;j++){
             if(choice==j){
                 switch (choice){
                     case 1:
@@ -112,7 +112,7 @@ public class appBugFix {
        //sorted in ascending order.
         
         Collections.sort(arrayList);
-        System.out.println("Sorted expenses: ");
+        System.out.println("Sorted the expenses: ");
         for(Integer i: arrayList) {
         	System.out.print(i + " ");
         }
